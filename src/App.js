@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
 
+import IntroVideo from "../src/components/IntroVideo.jsx";
+import Section from "../src/components/Section.jsx";
+import data from "./data/data.json";
+
+import '../src/style/IntroVideo.scss'
+import "../src/style/App.scss";
+import "../src/style/section.scss";
+
+import freshTopicImg from "./assets/academy.png";
+import freshTopic2Img from "./assets/story.png";
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <IntroVideo />
+      <Section h3={'he'} imgSrc={freshTopicImg} btnTxt={'h'} text={'hello'} />
+    </>
   );
 }
 
